@@ -1,0 +1,54 @@
+[alias]
+	st = status
+	ci = commit -a -v
+	cl = checkout liyu
+	cc = checkout com
+	cm = checkout master
+	puc = push origin com
+	plc = pull origin com
+	ml = merge liyu
+	mc = merge com
+	rd =  reset --hard
+	pum = push origin master
+	pub = push origin business
+	puu = push origin user_center
+	plm = pull origin master
+	plb = pull origin business
+	plu = pull origin user_center
+	pumn = push origin mvp_new
+	plmn = pull origin mvp_new
+	throw = reset --hard HEAD
+	throwh = reset --hard HEAD^
+	th = reset --hard
+	ck=checkout
+	plch=pull origin chatmod
+	puch=push origin chatmod
+	lg = log --oneline --decorate --graph --all
+	sf = show --format=%T
+	sl = show --oneline --stat
+	lst = log --stat -p
+	dc = diff --color-words
+	dw = diff --word-diff
+	dch = diff --color-words HEAD HEAD~
+	dcc = diff --color-words --cached
+	cg = config --global
+	cn = clean -n
+	cf = clean -f
+	cfx = clean -x -f
+	pll = pull origin liyu
+	pul = push origin liyu
+	fo = fetch origin
+	ro = rebase origin/master
+	rol = rebase origin/liyu
+	ra = remote add
+	mn = merge --no-ff
+	cfl = config --local -l
+	rmc=rm -r --cached
+	dcc= diff --color-words --cached
+	ba= branch -a
+[core]
+	editor = vim
+	filemode = false
+[user]
+	name = liyu
+	email = 416398516@qq.com
