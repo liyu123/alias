@@ -1,6 +1,6 @@
 # docker cmd
 alias dpa="docker ps -a"
-alias drma="drm `dpa -q`"
+alias drma="dpa -q|xargs docker rm"
 alias dpu="docker push"
 alias dim='docker images'
 alias dpsa='docker ps -a'
@@ -20,6 +20,10 @@ alias di="docker inspect"
 alias dsh="docker search"
 alias dimg="docker images"
 alias dc="docker commit"
+alias dmg="dim|grep "
+alias dnl="docker network ls "
+alias dbu="docker build -t "
+alias dif="docker inspect --format='{{.State.Pid}}' "
 
 # docker ctl
 alias srd="systemctl restart docker"
